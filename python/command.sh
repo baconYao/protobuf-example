@@ -6,3 +6,6 @@
 # simple/simple.proto: 要被產生的 protobuf 的所在地
 # 最後會產生 simple/simple_pb2.py
 protoc -I=simple/ --python_out=simple/ simple/simple.proto
+
+# 產生 enum protocol buffer 的 python code
+protoc -I=enum/ --python_out=enum/ enum/enum_example.proto
